@@ -323,7 +323,7 @@
 
             <div class="faq expanded">
               <h4 class="question">What if I’m an RIT student?</h4>
-              <p class="answer">If you register by July 20th and confirm by July 21st, you will be guaranteed a spot at Saachack. Otherwise, you can try for walk-in admission the day of the event. Walk-in admissions will be <b>very few</b> and first-come, first-serve.</p>
+              <p class="answer">If you register by July 25th and confirm by July 27th, you will be guaranteed a spot at Saachack. Otherwise, you can try for walk-in admission the day of the event. Walk-in admissions will be <b>very few</b> and first-come, first-serve.</p>
             </div>
 
 
@@ -453,6 +453,24 @@
             <a class="sponsors-link" href="#"></a>
           </div>
           <h1 class="heading">WELCOME TO Saachack 2019</h1>
+          <p id="demo" style="text-align: center;margin-top: 30px;color: #D0FA26"></p> 
+            <script> 
+            var deadline = new Date("Aug 2, 2019 00:00:00").getTime(); 
+            var x = setInterval(function() { 
+            var now = new Date().getTime(); 
+            var t = deadline - now; 
+            var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+            var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+            var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+            var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+            document.getElementById("demo").innerHTML = days + "d "  
+            + hours + "h " + minutes + "m " + seconds + "s "; 
+                if (t < 0) { 
+                    clearInterval(x); 
+                    document.getElementById("demo").innerHTML = "EXPIRED"; 
+                } 
+            }, 1000); 
+            </script> 
           <div class="navbar navbar-mobile navbar-mobile-bottom">
             <a class="faq-link" href="#"></a>
             <a class="register-link" href="#"></a>
@@ -469,7 +487,7 @@
           <a class="sign-link sign-bottom register-link" id="register-sign-link" href="#"><object id="register-sign" data="assets/graphics/registertext.svg" class="sign"></object></a>
           <div class="blurb">
             <h2 class="blurb-text">
-            Step into a world of boundless excitement and creation at Rajalakshmi Institute of Technology on <span class="date">July 27th-28th.</span> Join 100s' of other college students as they hack their way through this 24hr hackathon and explore endless possibilities.
+            Step into a world of boundless excitement and creation at Rajalakshmi Institute of Technology on <span class="date">August 2nd-3rd.</span> Join 100s' of other college students as they hack their way through this 24hr hackathon and explore endless possibilities.
             </h2>
             <img src="assets/graphics/logo.svg" class="logo">
           </div>
