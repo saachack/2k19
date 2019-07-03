@@ -1452,7 +1452,7 @@ mark.red {
 .speaker h5 {
     margin: 0;
     font-family: BrandonGrotesqueBlack, sans-serif;
-    font-size: 2.5vw;
+    font-size: 2.0vw;
     color: #f88379
 }
 
@@ -1470,7 +1470,7 @@ mark.red {
 
 @media screen and (max-width:599px) {
     .speaker h5 {
-        font-size: 15px
+        font-size: 12px
     }
 }
 

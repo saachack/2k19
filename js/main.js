@@ -180,7 +180,7 @@ function puzzle() {
         counter += 1;
         console.log(`You're ${counter}!`);
         if (counter === 21) {
-            window.location.href = "https://hackmirror.icu";
+            window.location.href = "https://www.linkedin.com/in/sripaad-s-b7693610a/";
         }
     }
 }

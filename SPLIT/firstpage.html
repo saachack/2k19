@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  color: white;
+}
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+.left {
+  left: 0;
+  background-color: black;
+}
+.right {
+  right: 0;
+  background-color: coral;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+}
+.centered img {
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 0;
+  /* padding-bottom: 40px; */
+  padding-top: 100px;
+  
+}
+
+.headerleft {
+  padding: 30px;
+  text-align: right;
+  background: #1abc9c;
+  color: white;
+  font-size: 12px;
+}
+.headerRight {
+  padding: 30px;
+  text-align: left;
+  background: #1abc9c;
+  color: white;
+  font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+<div class="split left">
+  <div class="headerleft">
+      <h1>Header</h1>
+      <p>This is where we will put the institution logo</p>
+  </div>
+  <div class="centered ctf" style="margin-top: 10px">
+    <img src="icons/ritctf.svg" alt="./Cyber_Maze">
+    <b><h2>./Cyber_Maze</h2></b>
+    <p>
+      <b>Cyber_Maze is a cyber security competition (jeopardy CTF) targeted to UG and PG college students.<br>
+      Challenges cover a broad range of topics from cryptography, forensics, reversing, web and more.<br>
+      The competition involves trying to solve a designated number of problems within a period of 8 hours.<br>
+      The competition begins on August 2nd 9:00 am and ends at 5:00 pm.<br>
+      After that walk through will be given for each challenge.<br>
+    </p></b>
+    <button onclick="ctfbutton()">CLICK HERE</button>
+    <script>
+    function ctfbutton() {
+      location.replace("https://saachack.github.io/CM-test")
+    }
+    </script>
+  </div>
+</div>
+<!-- style="background-image:url('icons/saachack.svg')"  -->
+<div class="split right" > 
+  <div class="headerRight">
+      <h1>Header</h1>
+      <p>This is where we will put college logo</p>
+  </div>
+  <div class="centered">
+    <img src="icons/3.png" alt="Saachack">
+    <b> <h2>Saachack</h2> </b>
+    <p><b>
+    Step into a world of boundless excitement and creation at Rajalakshmi Institute of Technology on August 2nd-3rd.<br>
+    Join 100s' of other college students as they hack their way through this 24hr hackathon and explore endless possibilities.
+    </p></b>
+    <button onclick="saachackbutton()">CLICK HERE</button>
+    <script>
+    function saachackbutton() {
+      location.replace("https://saachack.github.io/2k19")
+    }
+    </script>
+
+  </div>
+</div>
+     
+</body>
+</html> 
